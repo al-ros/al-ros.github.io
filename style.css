@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Theodorv03-SlantedA;
+    src: url("Theodorv03-SlantedA.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.back-ground {
+    background-image: url(Rectangle_1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 983px;
+}
+
+/* .back-ground {
+    background-image: url(Rectangle_1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.conteiner {
+    font-family: Theodorv03-SlantedA;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+    width: 1920px;
+    height: 82px;
+    /* border: 2px solid red; */
+}
+
+a {
+    font-weight: 400;
+    color: black;
+    font-size: 400%;
+    margin-right: 3%;
+    text-decoration: none;
+}
+
+.child {
+    margin: 0, 10px;
+}
+
+.white {
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.lang {
+    display: flex;
+    flex-flow: row wrap;
+    order: 999;
+    margin-left: auto;
+    padding-right: 25px;
+    font-weight: 400;
+    font-size: 400%;
+}
+
+.start-red {
+    color: #E6331B;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.lang-change-red {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+
+/* SQUARES */
+.squares {
+    position: absolute;
+    /* margin: 0 auto; */
+    right: 40px;
+    bottom: 30px;
+    /* top: 1013px; */
+}
+
+.squares > div {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.small-square {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+    display: none;
+}
+
+/* .big-square:hover .small-square {
+    opacity: 1;
+} */
+
+.big-square:hover {
+    outline: 3px solid black;
+}
+/* SQUARES */
+
+/* .big-square {
+    opacity: 1;
+} */
+
+.pop-up {
+    position: absolute;
+    width: 848px;
+    height: 370px;
+    left: 20px;
+    bottom: 20px;
+    background: #FFFFFF;
+}
+
+.kooperativ {    
+    /* VSE SKOMUNIZDIL A TEKST NE LOZHITSYA KAK NADO                      */
+    position: absolute;
+    width: 748px;
+    height: 128px;
+    /* border: 1px solid black; */
+    font-family: Graphik LCG;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 110%;
+    /* or 42px */
+    letter-spacing: -0.01em;
+    color: #000000;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.choose_office {
+    font-family: Theodorv03-SlantedA;
+    font-weight: 400;
+    color: black;
+    font-size: 400%;
+    margin-right: 3%;
+    text-decoration: none;
+    position: absolute;
+    width: 375px;
+    height: 90px;
+    left: 50px;
+    top: 65%;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.create-event {
+    font-family: Theodorv03-SlantedA;
+    font-weight: 400;
+    color: black;
+    font-size: 400%;
+    margin-right: 3%;
+    text-decoration: none;
+    position: absolute;
+    width: 375px;
+    height: 90px;
+    left: 423px;
+    top: 65%;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+
+.man-image {
+    /* ZOCHEM?! */
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    left: 1202px;
+    top: 530px;
+}
+
+
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.6;
+    }
+    .close:hover {
+    opacity: 1;
+    }
+    .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+    }
+    .close:before {
+    transform: rotate(45deg);
+    }
+    .close:after {
+    transform: rotate(-45deg);
+    }
